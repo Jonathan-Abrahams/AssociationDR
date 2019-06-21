@@ -1,0 +1,1 @@
+./Duplication_fasta_seqs/Duplication_36	NZ_CP011175.1	99.83	4057	1	1	1	4051	3794135	3798191	0.0	7448

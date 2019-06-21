@@ -1,0 +1,1 @@
+./Duplication_fasta_seqs/Duplication_78	NZ_CP011765.1	100.00	2532	0	0	1	2532	3690019	3692550	0.0	4676

@@ -1,0 +1,1 @@
+./Duplication_fasta_seqs/Duplication_117	NZ_CP017405.1	99.95	4051	2	0	1	4051	4065169	4069219	0.0	7470

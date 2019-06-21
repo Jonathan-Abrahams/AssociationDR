@@ -1,0 +1,3 @@
+./Duplication_fasta_seqs/Duplication_5	NZ_CP011208.1	100.00	5180	0	0	1	5180	1695078	1700257	0.0	9566
+./Duplication_fasta_seqs/Duplication_5	NZ_CP011208.1	100.00	5180	0	0	1	5180	2129248	2124069	0.0	9566
+./Duplication_fasta_seqs/Duplication_5	NZ_CP011208.1	100.00	5180	0	0	1	5180	3223513	3218334	0.0	9566

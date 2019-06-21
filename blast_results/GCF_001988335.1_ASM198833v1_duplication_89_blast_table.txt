@@ -1,0 +1,3 @@
+./Duplication_fasta_seqs/Duplication_89	NZ_CP013090.1	100.00	5857	0	0	1	5857	827817	833673	0.0	10816
+./Duplication_fasta_seqs/Duplication_89	NZ_CP013090.1	99.96	5574	2	0	1	5574	2077489	2071916	0.0	10283
+./Duplication_fasta_seqs/Duplication_89	NZ_CP013090.1	100.00	5543	0	0	1	5543	1643309	1648851	0.0	10237

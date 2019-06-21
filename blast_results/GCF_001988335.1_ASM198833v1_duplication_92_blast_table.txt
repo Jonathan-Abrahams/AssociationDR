@@ -1,0 +1,1 @@
+./Duplication_fasta_seqs/Duplication_92	NZ_CP013090.1	100.00	5720	0	0	1	5720	3689953	3695672	0.0	10563

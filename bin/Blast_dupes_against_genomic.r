@@ -2,6 +2,7 @@
 args = commandArgs(trailingOnly=TRUE)
 
 library(stringr)
+library(gtools)
 #repetitive elements association with dups in de novo seqs
 #gff=read.delim("B1917_duplications/B1917.gff",stringsAsFactors = F,header = F)
 print("args[1] should be the gff,args[2] should be the SRA table,args[3] should be the CNV list,args[4] should be the the assemblies list")
@@ -31,9 +32,10 @@ dups_in_question=dups[which(dups$Strains%in%all_assem$BioSample),]
 #sa,ple blast command:
 # blastn -query kek -subject GCF_001605365.1_ASM160536v1_genomic.fna -outfmt 6 -qcov_hsp_perc 90
 
-all_dups_fasta=list.files("Duplication_fasta/",pattern="*.fna$")
+all_dups_fasta=list.files("./Duplication_fasta_files/")
+all_dups_fasta=mixedsort(all_dups_fasta)
 line_numbers=str_extract(all_dups_fasta,"[0-9]*")
-
+#print(all_dups_fasta[1:10])
 #We need to find the GCF ID of the duplications so that we can blast the duplication DNA against the right seq.
 #GCF ID can be found in the all_assem column REFSEQ.
 dups_in_question$Refseq="0"
@@ -48,7 +50,7 @@ print("Running Blasts:")
 for(i in c(1:length(all_dups_fasta)))
 {
   print(i)
-  query_file=paste("./Duplication_fasta/",all_dups_fasta[i],sep="")
+  query_file=paste("./Duplication_fasta_files/",all_dups_fasta[i],sep="")
   print(paste("Query file is:",query_file))
   subject_file=paste("./Assembly/",dups_in_question$Refseq[i],"_genomic.fna",sep="")
   print(paste("Subject file is:",subject_file))

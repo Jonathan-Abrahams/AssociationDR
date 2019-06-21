@@ -1,0 +1,3 @@
+./Duplication_fasta_seqs/Duplication_34	NZ_CP011175.1	100.00	3751	0	0	1	3751	1688886	1685136	0.0	6927
+./Duplication_fasta_seqs/Duplication_34	NZ_CP011175.1	100.00	3751	0	0	1	3751	2021774	2018024	0.0	6927
+./Duplication_fasta_seqs/Duplication_34	NZ_CP011175.1	100.00	3751	0	0	1	3751	3232452	3236202	0.0	6927

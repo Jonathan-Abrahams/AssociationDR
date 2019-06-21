@@ -1,0 +1,1 @@
+./Duplication_fasta_seqs/Duplication_98	NZ_CP025353.1	100.00	3513	0	0	1	3513	3112419	3108907	0.0	6488

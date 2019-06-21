@@ -1,0 +1,1 @@
+./Duplication_fasta_seqs/Duplication_4	NZ_CP025344.1	100.00	2532	0	0	1	2532	3689945	3692476	0.0	4676
