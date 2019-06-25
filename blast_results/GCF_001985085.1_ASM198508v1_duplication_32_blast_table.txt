@@ -1,0 +1,1 @@
+./Duplication_fasta_seqs/Duplication_32	NZ_CP011175.1	99.99	10059	1	0	1	10059	3332467	3322409	0.0	18571

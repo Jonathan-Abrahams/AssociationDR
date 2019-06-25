@@ -1,0 +1,1 @@
+./Duplication_fasta_seqs/Duplication_27	NZ_CP013866.1	100.00	2532	0	0	1	2532	3684738	3687269	0.0	4676

@@ -1,0 +1,1 @@
+./Duplication_fasta_seqs/Duplication_56	NZ_CP010250.1	100.00	2532	0	0	1	2532	3689369	3691900	0.0	4676

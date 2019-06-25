@@ -1,0 +1,1 @@
+./Duplication_fasta_seqs/Duplication_18	NZ_CP013895.1	100.00	634	0	0	1	634	3692083	3692716	0.0	1171

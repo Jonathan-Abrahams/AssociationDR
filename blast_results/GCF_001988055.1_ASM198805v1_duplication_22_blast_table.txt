@@ -1,0 +1,2 @@
+./Duplication_fasta_seqs/Duplication_22	NZ_CP013076.1	100.00	634	0	0	1	634	429782	429149	0.0	1171
+./Duplication_fasta_seqs/Duplication_22	NZ_CP013076.1	100.00	634	0	0	1	634	1991628	1990995	0.0	1171
