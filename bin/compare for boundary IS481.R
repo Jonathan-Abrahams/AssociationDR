@@ -23,3 +23,9 @@ for(q in c(1:nrow(Dupe_filt_df)))
   Dupe_filt_df$Right_flank[q]=min(abs(rep_result_temp$V10- Blast_result_temp$V9))
 
 }
+
+jpeg("rplot3312312.jpg", width = 1000, height = "750")
+
+barplot(table(c(Dupe_filt_df$Left_flank,Dupe_filt_df$Right_flank)<3000)/c(nrow(Dupe_filt_df)*2))
+
+dev.off()
