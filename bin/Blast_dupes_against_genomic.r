@@ -19,7 +19,7 @@ dups=read.csv(args[3],stringsAsFactors = F)
 #all_assem=read.csv("genomes_proks (1).csv",stringsAsFactors = F)
 all_assem=read.csv(args[4],stringsAsFactors = F)
 
-all_assem$RefSeq.FTP=str_extract(all_assem$RefSeq.FTP,"GCF_.*")
+all_assem$RefSeq.FTP=str_extract(all_assem$GenBank.FTP,"GCA_.*")
 all_assem$BioSample=gsub(" ","",all_assem$BioSample)
 all_assem$Assembly=gsub(" ","",all_assem$Assembly)
 

@@ -10,19 +10,11 @@ Rscript ./bin/extract\ duplications.R ./Accessory_files/B1917.gff ./Accessory_fi
 ```
 This script will also create the file: genomes_to_download.csv.
 
-These files are then downloaded and blastdb database are made for them.
+These files are then downloaded, blastdb database are made for them, and then make them into blastdb:
 
-This is the start of the file Blast_dupes_against_genomic.r:
-
-```R
-print("args[1] should be the gff,
-args[2] should be the SRA table,
-args[3] should be the CNV list,
-args[4] should be the the assemblies list")
+```bash
+Rscript ./bin/download_and_make_DB.R
 ```
-
-
-Then make them into blastdb.
 
 Then we can blast each duplication against the appropriate assembly:
 
@@ -33,9 +25,13 @@ Then we can blast each duplication against the appropriate assembly:
 Great! So now we have the location of each duplication in its constituant assembly, we need to obtain the locaiton of repetitive elements in these genomes!
 
 ```bash
-ls -1 Duplication_fasta|grep ".fna$"|xargs -d '\n' -P 8 -n 1 -I TOK blastn -query ./blast_queries/all_blast -subject ./Duplication_fasta/TOK -outfmt 6 -qcov_hsp_perc 70 -out Rep_elements_blast_results/TOK_blast_rep_elements.txt
+ ls -1 Assembly|grep ".fna$"|xargs -d '\n' -P 8 -n 1 -I TOK blastn -query ./blast_queries/all_blast -subject ./Assembly/TOK -outfmt 6 -qcov_hsp_perc 70 -out Rep_elements_blast_results/TOK_blast_rep_elements.txt
 ```
 
 So now we need to compare these results- do any of the duplication boundaries fall within 2kb of these other elements?
 
-then run the compare boundary script. Although we first need to exclude the rrna things
+then run the compare boundary script:
+
+```bash
+Rscript ./bin/compare\ for\ boundary\ IS481.R
+```
