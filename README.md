@@ -30,8 +30,10 @@ Great! So now we have the location of each duplication in its constituant assemb
 
 So now we need to compare these results- do any of the duplication boundaries fall within 2kb of these other elements?
 
+
 then run the compare boundary script:
 
 ```bash
 Rscript ./bin/compare\ for\ boundary\ IS481.R
 ```
+
