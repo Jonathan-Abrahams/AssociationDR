@@ -38,4 +38,5 @@ ls -1 Duplication_fasta|grep ".fna$"|xargs -d '\n' -P 8 -n 1 -I TOK blastn -quer
 
 So now we need to compare these results- do any of the duplication boundaries fall within 2kb of these other elements?
 
+
 then run the compare boundary script. Although we first need to exclude the rrna things
